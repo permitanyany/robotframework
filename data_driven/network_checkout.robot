@@ -1,5 +1,4 @@
 *** Settings ***
-Library                OperatingSystem
 Library                SSHLibrary
 Suite Setup            Open Connection And Log In
 Suite Teardown         Close All Connections
@@ -7,10 +6,10 @@ Suite Teardown         Close All Connections
 *** Variables ***
 ${HOST}                leaf1
 ${USERNAME}            cumulus
-${PASSWORD}            CumulusLinux!
+${PASSWORD}            ***
 
 *** Test Cases ***
-pen Connection And Log In
+Open Connection And Log In
     Open Connection     ${HOST}
     Login               ${USERNAME}        ${PASSWORD}
 
