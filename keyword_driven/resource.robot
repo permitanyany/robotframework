@@ -5,7 +5,7 @@ Library                SSHLibrary
 *** Variables ***
 ${HOST}                leaf1
 ${USERNAME}            cumulus
-${PASSWORD}            CumulusLinux!
+${PASSWORD}            ***
 
 *** Keywords ***
 Open Connection And Log In
